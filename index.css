@@ -23,6 +23,7 @@ body {
 header {
     display: none;
     flex-flow: row wrap;
+    gap: 1rem;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0rem;
@@ -32,6 +33,7 @@ header {
     color: #333;
     font-size: 3.5rem;
     max-width: fit-content;
+    margin: 0;
 }
 .filter-button {
     border: none;
@@ -85,7 +87,7 @@ a::selection {
 
 .post-content {
     margin-top: 2rem;
-    padding-left: 0.5rem;
+    padding-left: 0.8rem;
 }
 
 .post-url {
