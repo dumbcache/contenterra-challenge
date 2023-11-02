@@ -1,4 +1,10 @@
+:root {
+    font-size: 62.5%;
+    --font-size-default: 1.6rem;
+    --color-black: #000;
+}
 body {
+    font-size: var(--font-size-default);
     font-family: Ubuntu, sans-serif;
     background-color: #eee;
     margin: 0;
@@ -6,41 +12,41 @@ body {
 }
 ::selection {
     background-color: #f0f5;
-    color: #000;
+    color: var(--color-black);
 }
 
 .container {
-    max-width: 1280px;
-    margin: 20px auto;
-    padding: 0px 20px;
+    max-width: 128rem;
+    margin: auto;
+    padding: 0rem 2rem;
 }
 header {
     display: none;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 2rem 0rem;
 }
 
 .page-title {
     color: #333;
-    font-size: 35px;
+    font-size: 3.5rem;
     max-width: fit-content;
 }
 .filter-button {
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--color-black);
     cursor: pointer;
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 h2 {
-    margin: 10px 0px;
-    font-size: 20px;
+    margin: 1rem 0rem;
+    font-size: 2rem;
     overflow-wrap: break-word;
 }
 p {
-    margin: 10px 0px;
+    margin: 1rem 0rem;
     overflow-wrap: break-word;
 }
 a {
@@ -56,10 +62,10 @@ a::selection {
 }
 .post-card {
     /* border: 1px solid #0008; */
-    border-left: 3px solid #000;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 10px;
+    border-left: 3px solid var(--color-black);
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
     box-shadow: 0px 2px 5px #0008;
     background-color: #ddd;
 }
@@ -68,41 +74,44 @@ a::selection {
     background-color: #cccc;
 }
 .post-title {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
-    border-left: 2px solid black;
-    padding-left: 0.5rem;
+    border-left: 2px solid var(--color-black);
+    padding-left: 0.8rem;
     margin: 0;
-    margin-top: 0.5rem;
     overflow-wrap: break-word;
+    max-width: 98%;
 }
 
 .post-content {
-    margin-top: 20px;
+    margin-top: 2rem;
     padding-left: 0.5rem;
 }
 
 .post-url {
     display: inline-block;
     color: #f00;
-    border-left: 2px solid black;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-    max-width: 100%;
+    border-left: 2px solid var(--color-black);
+    padding-left: 0.8rem;
+    max-width: 98%;
     text-decoration: underline;
 }
-.post-url:hover {
-    /* color: #00f; */
-}
 .post-score {
-    font-size: 14px;
+    font-size: 1.4rem;
     background-color: #bbb9;
     max-width: fit-content;
-    padding: 5px;
-    padding-left: 0.5rem;
-    border-left: 2px solid black;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--color-black);
 }
 
 hr {
     color: #0008;
+}
+
+code,
+pre {
+    font-size: 1.6rem;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 }
